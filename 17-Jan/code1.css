@@ -1,0 +1,22 @@
+h1{
+    background-color: aqua;
+}
+.grid-container{
+    display: grid;
+    background-color: lightblue;
+    flex-direction: row;
+    align-items: column;
+    grid-template-columns: 100px 120px 100px;
+    grid-template-rows: 100px 120px 100px;
+    column-gap: 2px;
+    row-gap: 2px;
+    grid-row: 1/2;
+}
+.grid-container div{
+    background-color: lightcoral;
+    padding: 20px;
+    margin: 10px;
+}
+.grid-item4{
+    grid-row: 1/2;
+}

@@ -1,0 +1,28 @@
+h1{
+    background-color: aqua;
+}
+.grid-container{
+    display: grid;
+    background-color: lightblue;
+    flex-direction: row;
+    align-items: column;
+    column-gap: 2px;
+    row-gap: 2px;
+    grid-template-areas: "header header header"
+                         "main main main"
+                         "footer footer footer";
+}
+.grid-container div{
+    background-color: lightcoral;
+    padding: 20px;
+    margin: 10px;
+}
+.grid-item1{
+    grid-area: header;
+}
+.grid-item2{
+    grid-area: main;
+}
+.grid-item3{
+    grid-area: footer;
+}
