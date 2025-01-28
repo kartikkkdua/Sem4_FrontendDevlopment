@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script>
+        function hello(){
+            alert("Submitted successfully!!");
+            document.getElementById("message").innerText = "Data recorded successfully.";
+            console.log("Data recorded successfully.");
+            console.log("Name: ", document.getElementsByName("name")[0].value);
+            console.log("Email: ", document.getElementsByName("mail")[0].value);
+            console.log("Age: ", document.getElementsByName("age")[0].value);
+            console.log("DOB: ", document.getElementsByName("dob")[0].value);
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <div>
+            Name:
+            <input type="text" placeholder="enter name" name="name"/>
+        </div>
+        <div>
+           Email:
+           <input type="text" placeholder="enter email" name="mail" />
+        </div>
+        <div>
+           Age:
+           <input type="number" placeholder="enter age" name="age" />
+        </div>
+        <div>
+            DOB:
+            <input type="date" placeholder="enter DOB" name="dob" />
+        </div>
+        <div>
+            <button type="button" onclick="hello()">Submit</button>
+        </div>
+    </form>
+    <div id="message"></div>
+</body>
+</html>
