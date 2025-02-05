@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #eef2f7;
@@ -12,7 +12,6 @@ body {
     transition: background 0.3s ease-in-out;
 }
 
-/* Hero Section */
 .hero {
     background: linear-gradient(135deg, #007bff, #0056b3);
     color: white;
@@ -57,7 +56,6 @@ body {
     transform: translateY(-3px);
 }
 
-/* Section Styles */
 section {
     background: white;
     padding: 25px;
@@ -81,7 +79,6 @@ h2 {
     letter-spacing: 1.2px;
 }
 
-/* Skills Section */
 .skill-container {
     display: flex;
     flex-wrap: wrap;
@@ -105,7 +102,6 @@ h2 {
     background: #0056b3;
 }
 
-/* Experience & Projects */
 .job, .project {
     background: #f9f9f9;
     padding: 18px;
@@ -119,7 +115,6 @@ h2 {
     background: #eef2f7;
 }
 
-/* Contact Section */
 .contact a {
     color: #007bff;
     text-decoration: none;
@@ -132,7 +127,7 @@ h2 {
     color: #0056b3;
 }
 
-/* Responsive Design */
+
 @media (max-width: 600px) {
     section {
         width: 95%;

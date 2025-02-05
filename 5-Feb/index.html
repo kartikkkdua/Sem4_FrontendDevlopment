@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Show, Hide, Toggle Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+</head>
+<body>
+
+    <button id="showButton">Show</button>
+    <button id="hideButton">Hide</button>
+    <button id="toggleButton">Toggle</button>
+
+    <div id="content" style="display: none;">Hello, World!</div>
+
+    <script>
+        $(document).ready(function() {
+            
+            $("#showButton").click(function() {
+                $("#content").show();
+            });
+
+            
+            $("#hideButton").click(function() {
+                $("#content").hide();
+            });
+
+           
+            $("#toggleButton").click(function() {
+                $("#content").toggle();
+            });
+        });
+    </script>
+
+</body>
+</html>
