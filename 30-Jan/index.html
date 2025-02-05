@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>    
+    <h2>Registeration form</h2>
+    <form>
+        <div>
+            Name:
+            <input type="text" placeholder="enter name" name="name"/>
+        </div>
+        <div>
+           Email:
+           <input type="text" placeholder="enter email" name="mail" />
+        </div>
+        <div>
+           Age:
+           <input type="number" placeholder="enter age" name="age" />
+        </div>
+        <div>
+            DOB:
+            <input type="date" placeholder="enter DOB" name="dob" />
+        </div>
+        <div>
+            Problem:
+            <select name="problem">
+                <option value="">Select a problem</option>
+                <option value="Network Issue">Network Issue</option>
+                <option value="Hardware Issue">Hardware Issue</option>
+                <option value="Software Issue">Software Issue</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div>
+            <button type="button" onclick="validateForm()">Submit</button>
+        </div>
+    </form>
+    <div id="message"></div>
+</body>
+</html>
