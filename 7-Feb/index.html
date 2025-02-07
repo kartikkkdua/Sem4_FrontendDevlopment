@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery each() Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function() {
+            // 1. Iterating over an array
+            var fruits = ["Apple", "Banana", "Mango"];
+            console.log("Array Elements:");
+            $.each(fruits, function(index, value) {
+                console.log("Index: " + index + ", Value: " + value);
+            });
+
+            // 2. Iterating over an object
+            var person = {
+                name: "John",
+                age: 30,
+                city: "New York"
+            };
+            console.log("Object Properties:");
+            $.each(person, function(key, value) {
+                console.log("Key: " + key + ", Value: " + value);
+            });
+        });
+    </script>
+
+</body>
+</html>
