@@ -1,0 +1,22 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title> Fetch Data using URL </title> 
+</head> 
+<body> 
+    <h2 id="gfg">Click the button to fetch data</h2>  
+    <button id="b">Click Here!</button>  
+
+    <script> 
+        document.getElementById("b").addEventListener("click", function() { 
+            fetch("https://jsonplaceholder.typicode.com/posts/1") 
+                .then(response => response.json()) 
+                .then(data => { 
+                    document.getElementById("gfg").innerText = data.title; 
+                    document.getElementById("b").innerText = "Data Loaded"; 
+                }) 
+                
+        }); 
+    </script> 
+</body> 
+</html>
